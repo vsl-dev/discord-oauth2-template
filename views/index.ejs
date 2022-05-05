@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Discord Oauth2 Template - @vsl-dev</title>
+<meta charset="UTF-8">
+<meta name="author" content="github.com/vsl-dev, vsldev.tk">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<center>
+<% if(user) { %>
+<h2>Welcome <%= user.username %><span>#<%= user.discriminator %></span></h2>
+<a href="https://discord.com/users/<%= user.id %>">Go Discord Profile</a>
+<% } else { %>
+<a href="/login">Please login for show this page</a>
+<% } %>
+</center>
+</body>
+</html>
